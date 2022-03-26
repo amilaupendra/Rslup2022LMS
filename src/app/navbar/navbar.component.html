@@ -1,15 +1,17 @@
 
-<nav class="navbar">
-    <a class="navbar-brand" href="#"><img src="assets/images/navbar brand.png" width="30px" height="30px" alt="navbramd"> Library</a> 
+<nav class="navbar  navbar-light bg-dark">
+    <a class="navbar-brand" routerLink=""><img src="assets/images/navbar brand.png" width="30px" height="30px" alt="navbramd"><h6 style="color: white; display: inline;">LibRary</h6> </a> 
 
       <ul class="nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home </a>
+          <a class="nav-link" routerLink="">Home </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sign In</a>
+          <a class="nav-link" routerLink="signin">Sign In</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sign Up</a>
+          <a class="nav-link"routerLink="signup">Sign Up</a>
       </ul>
   </nav>
+
+  <router-outlet></router-outlet>
